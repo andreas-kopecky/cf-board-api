@@ -5,6 +5,7 @@ CfBoardApi::Application.routes.draw do
 
   resources :sections do
     get 'headings_for_section' => 'postings#headings_for_section'
+    post 'create_heading' => 'posting#create_heading'
   end
 
   # The priority is based upon order of creation:
